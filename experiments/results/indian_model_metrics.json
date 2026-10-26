@@ -1,0 +1,122 @@
+{
+  "protocol": "single stratified 75/25 holdout; random_state=17; exploratory; no external validation",
+  "n_total": 224,
+  "excluded_age_over_168_months": 1,
+  "n_train": 168,
+  "n_test": 56,
+  "target_positive": 127,
+  "feature_count": 32,
+  "features": [
+    "Age in months",
+    "Gender",
+    "SES Kuppuswamy",
+    "Residence",
+    "New 1a1",
+    "New 1a2",
+    "New 1a3",
+    "New 1a4",
+    "New 1a5",
+    "New 1a6",
+    "New1a7",
+    "New1a8",
+    "New1b1",
+    "New1b2",
+    "New1b3",
+    "New1b4",
+    "New1c1",
+    "New1c2",
+    "New1c3",
+    "New2a1",
+    "New2a2",
+    "New2a3",
+    "New2a4",
+    "New2a5",
+    "New2a6",
+    "New2a7",
+    "New2b",
+    "New2c",
+    "New2d1",
+    "New2d2",
+    "New2d3",
+    "New2d4"
+  ],
+  "excluded_columns": [
+    "CARS Raw",
+    "CARS Severity",
+    "DP3 Adaptive",
+    "DP3 Cognitive",
+    "DP3 Communication",
+    "DP3 DQ",
+    "DP3 Physical",
+    "DP3 Social",
+    "DP3 interpretation",
+    "New final summary ASD",
+    "New final tool ASD",
+    "New impaired functioning",
+    "New onset early development",
+    "Old tool ASD",
+    "Old tool final",
+    "Old tool number of criteria",
+    "Patient ID",
+    "Section A1",
+    "Section A2",
+    "newtoolseverity"
+  ],
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.8571428571428571,
+      "balanced_accuracy": 0.8489583333333333,
+      "f1": 0.8787878787878788,
+      "roc_auc": 0.9453125,
+      "brier": 0.08755926465456539,
+      "gender_subgroups": {
+        "1": {
+          "n": 33,
+          "sensitivity": 0.8333333333333334,
+          "sensitivity_wilson_95": [
+            0.6077750036164076,
+            0.9416352959953425
+          ],
+          "adequate_n_10": true
+        },
+        "2": {
+          "n": 23,
+          "sensitivity": 1.0,
+          "sensitivity_wilson_95": [
+            0.7846829880728186,
+            1.0
+          ],
+          "adequate_n_10": true
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.8928571428571429,
+      "balanced_accuracy": 0.8802083333333333,
+      "f1": 0.9117647058823529,
+      "roc_auc": 0.9674479166666666,
+      "brier": 0.07310880021611228,
+      "gender_subgroups": {
+        "1": {
+          "n": 33,
+          "sensitivity": 0.9444444444444444,
+          "sensitivity_wilson_95": [
+            0.7424220019799247,
+            0.9901250641690756
+          ],
+          "adequate_n_10": true
+        },
+        "2": {
+          "n": 23,
+          "sensitivity": 1.0,
+          "sensitivity_wilson_95": [
+            0.7846829880728186,
+            1.0
+          ],
+          "adequate_n_10": true
+        }
+      }
+    }
+  },
+  "population_limit": "Tertiary referral cohort of children already suspected of ASD; spectrum and selection bias limit generalization."
+}

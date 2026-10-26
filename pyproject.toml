@@ -1,0 +1,13 @@
+[project]
+name = "autinsight"
+version = "0.1.0"
+description = "Explainable pediatric ASD screening research framework"
+requires-python = ">=3.11,<3.13"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+pythonpath = ["."]

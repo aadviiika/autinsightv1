@@ -1,0 +1,301 @@
+{
+  "rows": 292,
+  "columns": 21,
+  "fields": {
+    "A1_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "0"
+      ]
+    },
+    "A2_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "0"
+      ]
+    },
+    "A3_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "0",
+        "1"
+      ]
+    },
+    "A4_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "0",
+        "1"
+      ]
+    },
+    "A5_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "0"
+      ]
+    },
+    "A6_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "0"
+      ]
+    },
+    "A7_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "0",
+        "1"
+      ]
+    },
+    "A8_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "0"
+      ]
+    },
+    "A9_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "0",
+        "1"
+      ]
+    },
+    "A10_Score": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "0",
+        "1"
+      ]
+    },
+    "age": {
+      "dtype": "float64",
+      "missing": 4,
+      "unique_count": 8,
+      "values": [
+        "6.0",
+        "5.0",
+        "4.0",
+        "11.0",
+        "10.0",
+        "8.0",
+        "7.0",
+        "9.0"
+      ]
+    },
+    "gender": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "m",
+        "f"
+      ]
+    },
+    "ethnicity": {
+      "dtype": "object",
+      "missing": 43,
+      "unique_count": 10,
+      "values": [
+        "Others",
+        "'Middle Eastern '",
+        "White-European",
+        "Black",
+        "'South Asian'",
+        "Asian",
+        "Pasifika",
+        "Hispanic",
+        "Turkish",
+        "Latino"
+      ]
+    },
+    "jaundice": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    "autism": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    "country_of_res": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 52,
+      "values": [
+        "Jordan",
+        "'United States'",
+        "Egypt",
+        "'United Kingdom'",
+        "Bahrain",
+        "Austria",
+        "Kuwait",
+        "'United Arab Emirates'",
+        "Europe",
+        "Malta",
+        "Bulgaria",
+        "'South Africa'",
+        "India",
+        "Afghanistan",
+        "Georgia",
+        "'New Zealand'",
+        "Syria",
+        "Iraq",
+        "Australia",
+        "'Saudi Arabia'",
+        "Armenia",
+        "Turkey",
+        "Pakistan",
+        "Canada",
+        "Oman",
+        "Brazil",
+        "'South Korea'",
+        "'Costa Rica'",
+        "Sweden",
+        "Philippines",
+        "Malaysia",
+        "Argentina",
+        "Japan",
+        "Bangladesh",
+        "Qatar",
+        "Ireland",
+        "Romania",
+        "Netherlands",
+        "Lebanon",
+        "Germany"
+      ]
+    },
+    "used_app_before": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "no",
+        "yes"
+      ]
+    },
+    "result": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 11,
+      "values": [
+        "5",
+        "4",
+        "10",
+        "7",
+        "8",
+        "3",
+        "9",
+        "2",
+        "1",
+        "6",
+        "0"
+      ]
+    },
+    "age_desc": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 1,
+      "values": [
+        "'4-11 years'"
+      ]
+    },
+    "relation": {
+      "dtype": "object",
+      "missing": 43,
+      "unique_count": 5,
+      "values": [
+        "Parent",
+        "Self",
+        "Relative",
+        "'Health care professional'",
+        "self"
+      ]
+    },
+    "class": {
+      "dtype": "object",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "NO",
+        "YES"
+      ]
+    }
+  },
+  "duplicate_rows": 2,
+  "target_candidates": {
+    "class": {
+      "NO": "151",
+      "YES": "141"
+    }
+  },
+  "target_leakage_notes": [
+    "Exclude total score/result and target aliases from predictors.",
+    "The questionnaire-derived target may be circular with A1-A10; this dataset cannot establish diagnostic validity."
+  ],
+  "circularity_audit": {
+    "result_equals_sum_of_A1_to_A10": true,
+    "class_is_threshold_of_result_at_7": true,
+    "result_class_cross_tab": {
+      "NO": {
+        "0": 1,
+        "1": 6,
+        "2": 9,
+        "3": 21,
+        "4": 33,
+        "5": 41,
+        "6": 40,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "YES": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 44,
+        "8": 44,
+        "9": 32,
+        "10": 21
+      }
+    }
+  }
+}

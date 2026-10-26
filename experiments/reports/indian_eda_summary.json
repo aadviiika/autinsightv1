@@ -1,0 +1,21 @@
+{
+  "rows": 225,
+  "columns": 53,
+  "target_counts": {
+    "1": 128,
+    "2": 97
+  },
+  "missing": {
+    "SES Kuppuswamy": 73,
+    "CARS Raw": 1,
+    "DP3 Physical": 17,
+    "DP3 Adaptive": 17,
+    "DP3 Social": 17,
+    "DP3 Cognitive": 17,
+    "DP3 Communication": 17,
+    "DP3 DQ": 17,
+    "DP3 interpretation": 17,
+    "newtoolseverity": 115
+  },
+  "duplicates": 0
+}

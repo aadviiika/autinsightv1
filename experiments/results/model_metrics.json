@@ -1,0 +1,521 @@
+{
+  "protocol": "single stratified 75/25 holdout; random_state=17; no external validation",
+  "n_total": 290,
+  "n_train": 217,
+  "n_test": 73,
+  "exact_duplicates_removed": 2,
+  "excluded_columns": [
+    "result",
+    "age_desc"
+  ],
+  "models": {
+    "logistic_regression": {
+      "accuracy": 0.9726027397260274,
+      "balanced_accuracy": 0.9736842105263157,
+      "f1": 0.9722222222222222,
+      "roc_auc": 1.0,
+      "brier": 0.01921943041247581,
+      "reliability_placeholder": {
+        "coverage_p0_p1": 0.8904109589041096,
+        "selective_risk_p0_p1": 0.0,
+        "tier_counts": {
+          "P0": 56,
+          "P1": 9,
+          "P2": 2,
+          "P3": 6
+        },
+        "note": "Uncalibrated confidence bins; exploratory only."
+      },
+      "subgroup_metrics": {
+        "gender": {
+          "f": {
+            "n": 21,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9523809523809523,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.7224598312333834,
+              1.0
+            ]
+          },
+          "m": {
+            "n": 52,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9807692307692307,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.8668035060468213,
+              1.0
+            ]
+          }
+        },
+        "ethnicity": {
+          "Asian": {
+            "n": 11,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.5100999795960008,
+              1.0
+            ]
+          },
+          "Black": {
+            "n": 5,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.34237195288961925,
+              1.0
+            ]
+          },
+          "Hispanic": {
+            "n": 1,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Latino": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Middle Eastern": {
+            "n": 7,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.43849391955098227,
+              1.0
+            ]
+          },
+          "Missing": {
+            "n": 13,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9230769230769231,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.5100999795960008,
+              1.0
+            ]
+          },
+          "Others": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": null,
+            "sensitivity_wilson_95": null
+          },
+          "South Asian": {
+            "n": 6,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.43849391955098227,
+              1.0
+            ]
+          },
+          "White-European": {
+            "n": 26,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9615384615384616,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.8156763396284354,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.9452054794520548,
+      "balanced_accuracy": 0.943984962406015,
+      "f1": 0.9411764705882353,
+      "roc_auc": 0.9887218045112782,
+      "brier": 0.09447959755772371,
+      "reliability_placeholder": {
+        "coverage_p0_p1": 0.3698630136986301,
+        "selective_risk_p0_p1": 0.0,
+        "tier_counts": {
+          "P0": 13,
+          "P1": 14,
+          "P2": 14,
+          "P3": 32
+        },
+        "note": "Uncalibrated confidence bins; exploratory only."
+      },
+      "subgroup_metrics": {
+        "gender": {
+          "f": {
+            "n": 21,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9523809523809523,
+            "sensitivity": 0.9,
+            "sensitivity_wilson_95": [
+              0.5958436145024278,
+              0.9821242504842788
+            ]
+          },
+          "m": {
+            "n": 52,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9423076923076923,
+            "sensitivity": 0.92,
+            "sensitivity_wilson_95": [
+              0.7503348787704218,
+              0.977780066308908
+            ]
+          }
+        },
+        "ethnicity": {
+          "Asian": {
+            "n": 11,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.5100999795960008,
+              1.0
+            ]
+          },
+          "Black": {
+            "n": 5,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.34237195288961925,
+              1.0
+            ]
+          },
+          "Hispanic": {
+            "n": 1,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Latino": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Middle Eastern": {
+            "n": 7,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 0.7142857142857143,
+            "sensitivity": 0.3333333333333333,
+            "sensitivity_wilson_95": [
+              0.0614903152761605,
+              0.7923450448735121
+            ]
+          },
+          "Missing": {
+            "n": 13,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.8461538461538461,
+            "sensitivity": 0.75,
+            "sensitivity_wilson_95": [
+              0.3006360524426366,
+              0.9544139373553637
+            ]
+          },
+          "Others": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": null,
+            "sensitivity_wilson_95": null
+          },
+          "South Asian": {
+            "n": 6,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.43849391955098227,
+              1.0
+            ]
+          },
+          "White-European": {
+            "n": 26,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.8156763396284354,
+              1.0
+            ]
+          }
+        }
+      },
+      "shap_tree_explainer": {
+        "scope": "comparative Random Forest baseline, not primary XGBoost",
+        "global_top_10": [
+          {
+            "feature": "numeric__a4_score",
+            "mean_abs_shap": 0.09547386717110862
+          },
+          {
+            "feature": "numeric__a9_score",
+            "mean_abs_shap": 0.07610930503289058
+          },
+          {
+            "feature": "numeric__a10_score",
+            "mean_abs_shap": 0.06112183222196182
+          },
+          {
+            "feature": "numeric__a5_score",
+            "mean_abs_shap": 0.05796732527115474
+          },
+          {
+            "feature": "numeric__a8_score",
+            "mean_abs_shap": 0.05697539769779503
+          },
+          {
+            "feature": "numeric__a1_score",
+            "mean_abs_shap": 0.05550532369027904
+          },
+          {
+            "feature": "numeric__a7_score",
+            "mean_abs_shap": 0.03907448431476553
+          },
+          {
+            "feature": "numeric__a6_score",
+            "mean_abs_shap": 0.03899657371576997
+          },
+          {
+            "feature": "numeric__a3_score",
+            "mean_abs_shap": 0.03270961148887913
+          },
+          {
+            "feature": "numeric__a2_score",
+            "mean_abs_shap": 0.026965140443400603
+          }
+        ],
+        "example_test_record_top_10": [
+          {
+            "feature": "numeric__a4_score",
+            "contribution": -0.12837445523843566
+          },
+          {
+            "feature": "numeric__a9_score",
+            "contribution": 0.08672685423106076
+          },
+          {
+            "feature": "numeric__a1_score",
+            "contribution": -0.07876213114562182
+          },
+          {
+            "feature": "numeric__a8_score",
+            "contribution": 0.06860772856549596
+          },
+          {
+            "feature": "numeric__a10_score",
+            "contribution": 0.04367267364720453
+          },
+          {
+            "feature": "numeric__a5_score",
+            "contribution": 0.04008723873184492
+          },
+          {
+            "feature": "numeric__a6_score",
+            "contribution": 0.03607582254721627
+          },
+          {
+            "feature": "numeric__a7_score",
+            "contribution": 0.032825092746993294
+          },
+          {
+            "feature": "numeric__a2_score",
+            "contribution": 0.02490565302334478
+          },
+          {
+            "feature": "numeric__a3_score",
+            "contribution": 0.022463271383160788
+          }
+        ],
+        "example_test_record_index": 0,
+        "additivity_error_vs_positive_probability": 1.887379141862766e-15,
+        "warning": "SHAP explains this fitted model, not causality or diagnosis; single split, exploratory only."
+      }
+    },
+    "xgboost": {
+      "accuracy": 0.9726027397260274,
+      "balanced_accuracy": 0.9725563909774436,
+      "f1": 0.9714285714285714,
+      "roc_auc": 0.9977443609022557,
+      "brier": 0.037458827548087104,
+      "reliability_placeholder": {
+        "coverage_p0_p1": 0.7534246575342466,
+        "selective_risk_p0_p1": 0.0,
+        "tier_counts": {
+          "P0": 42,
+          "P1": 13,
+          "P2": 5,
+          "P3": 13
+        },
+        "note": "Uncalibrated confidence bins; exploratory only."
+      },
+      "subgroup_metrics": {
+        "gender": {
+          "f": {
+            "n": 21,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9523809523809523,
+            "sensitivity": 0.9,
+            "sensitivity_wilson_95": [
+              0.5958436145024278,
+              0.9821242504842788
+            ]
+          },
+          "m": {
+            "n": 52,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9807692307692307,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.8668035060468213,
+              1.0
+            ]
+          }
+        },
+        "ethnicity": {
+          "Asian": {
+            "n": 11,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.5100999795960008,
+              1.0
+            ]
+          },
+          "Black": {
+            "n": 5,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.34237195288961925,
+              1.0
+            ]
+          },
+          "Hispanic": {
+            "n": 1,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Latino": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.20654329147389294,
+              1.0
+            ]
+          },
+          "Middle Eastern": {
+            "n": 7,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 0.8571428571428571,
+            "sensitivity": 0.6666666666666666,
+            "sensitivity_wilson_95": [
+              0.2076549551264879,
+              0.9385096847238394
+            ]
+          },
+          "Missing": {
+            "n": 13,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 0.9230769230769231,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.5100999795960008,
+              1.0
+            ]
+          },
+          "Others": {
+            "n": 2,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": null,
+            "sensitivity_wilson_95": null
+          },
+          "South Asian": {
+            "n": 6,
+            "interpretation_adequate_n_10": false,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.43849391955098227,
+              1.0
+            ]
+          },
+          "White-European": {
+            "n": 26,
+            "interpretation_adequate_n_10": true,
+            "accuracy": 1.0,
+            "sensitivity": 1.0,
+            "sensitivity_wilson_95": [
+              0.8156763396284354,
+              1.0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "deterministic_questionnaire_rule": {
+    "rule": "sum(A1_Score..A10_Score) >= 7",
+    "accuracy": 1.0,
+    "balanced_accuracy": 1.0,
+    "f1": 1.0,
+    "interpretation": "Reconstructs the dataset's questionnaire-derived screening class; not diagnostic validation."
+  },
+  "demographics_only_logistic_regression": {
+    "accuracy": 0.5342465753424658,
+    "balanced_accuracy": 0.5334586466165414,
+    "f1": 0.5142857142857142,
+    "roc_auc": 0.5834586466165413,
+    "brier": 0.24838638858557446,
+    "features": [
+      "age",
+      "gender",
+      "ethnicity",
+      "jaundice",
+      "family_history",
+      "country",
+      "used_app_before",
+      "who_completed"
+    ],
+    "interpretation": "Sensitivity analysis without A1-A10; target is still questionnaire-derived."
+  }
+}

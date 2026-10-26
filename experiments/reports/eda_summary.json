@@ -1,0 +1,32 @@
+{
+  "rows": 292,
+  "columns": 21,
+  "missing": {
+    "A1_Score": 0,
+    "A2_Score": 0,
+    "A3_Score": 0,
+    "A4_Score": 0,
+    "A5_Score": 0,
+    "A6_Score": 0,
+    "A7_Score": 0,
+    "A8_Score": 0,
+    "A9_Score": 0,
+    "A10_Score": 0,
+    "age": 4,
+    "gender": 0,
+    "ethnicity": 43,
+    "jaundice": 0,
+    "autism": 0,
+    "country_of_res": 0,
+    "used_app_before": 0,
+    "result": 0,
+    "age_desc": 0,
+    "relation": 43,
+    "class": 0
+  },
+  "duplicates": 2,
+  "target_counts": {
+    "NO": 151,
+    "YES": 141
+  }
+}

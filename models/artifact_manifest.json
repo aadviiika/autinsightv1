@@ -1,0 +1,51 @@
+{
+  "artifact_version": "autinsight-0.1.0-uci419-seed17",
+  "trained_date": "2026-10-17",
+  "dataset_id": 419,
+  "dataset_sha256": "bd1fba8f42427bb6b5c5cd30f6b06a650693e3217658cd0dc19f8b9a60d9ec31",
+  "target": "class: YES=1, NO=0; label is exactly result >= 7 and result is the A1-A10 sum",
+  "train_rows": 217,
+  "test_rows": 73,
+  "random_seed": 17,
+  "model": "XGBoostClassifier",
+  "xgboost_parameters": {
+    "n_estimators": 250,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "eval_metric": "logloss",
+    "random_state": 17
+  },
+  "software": {
+    "scikit_learn": "1.6.1",
+    "xgboost": "2.1.4"
+  },
+  "filename": "primary.joblib",
+  "artifact_sha256": "4de746f481010e47472ce5d4d9fca01ce43b10bc44cc95992cef22abaa43a9bc",
+  "feature_names": [
+    "a1_score",
+    "a2_score",
+    "a3_score",
+    "a4_score",
+    "a5_score",
+    "a6_score",
+    "a7_score",
+    "a8_score",
+    "a9_score",
+    "a10_score",
+    "age",
+    "gender",
+    "ethnicity",
+    "jaundice",
+    "family_history",
+    "country",
+    "used_app_before",
+    "who_completed"
+  ],
+  "thresholds": {
+    "P0": 0.9,
+    "P1": 0.8,
+    "P2": 0.7
+  }
+}

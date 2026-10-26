@@ -1,0 +1,5 @@
+cff-version: 1.2.0
+message: "Cite the project as software; author metadata has not been supplied."
+title: "AutInsight: Explainable Pediatric ASD Screening Research Framework"
+type: software
+version: 0.1.0

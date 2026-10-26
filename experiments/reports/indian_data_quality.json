@@ -1,0 +1,808 @@
+{
+  "rows": 225,
+  "columns": 53,
+  "duplicate_rows": 0,
+  "unique_patient_ids": 225,
+  "age_in_months": {
+    "minimum": 15,
+    "maximum": 180,
+    "above_article_stated_14_year_limit_n": 1,
+    "note": "The publication states ages 1\u201314 years; preserve and flag source rows above 168 months for sensitivity review."
+  },
+  "target_counts": {
+    "1": 128,
+    "2": 97
+  },
+  "fields": {
+    "Patient ID": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 225,
+      "values": [
+        "1001",
+        "1002",
+        "1003",
+        "1004",
+        "1005",
+        "1006",
+        "1007",
+        "1008",
+        "1009",
+        "1010",
+        "1011",
+        "1012",
+        "1013",
+        "1014",
+        "1015",
+        "1016",
+        "1017",
+        "1018",
+        "1019",
+        "1020",
+        "1021",
+        "1022",
+        "1023",
+        "1024",
+        "1025",
+        "1026",
+        "1027",
+        "1028",
+        "1029",
+        "1030",
+        "1031",
+        "1032",
+        "1033",
+        "1034",
+        "1035",
+        "1036",
+        "1037",
+        "1038",
+        "1039",
+        "1040",
+        "1041",
+        "1042",
+        "1043",
+        "1044",
+        "1045",
+        "1046",
+        "1047",
+        "1048",
+        "1049",
+        "1050",
+        "1051",
+        "1052",
+        "1053",
+        "1054",
+        "1055",
+        "1056",
+        "1057",
+        "1058",
+        "1059",
+        "1060"
+      ]
+    },
+    "Age in months": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 74,
+      "values": [
+        "36",
+        "72",
+        "27",
+        "31",
+        "60",
+        "26",
+        "180",
+        "34",
+        "32",
+        "48",
+        "52",
+        "76",
+        "37",
+        "43",
+        "42",
+        "50",
+        "168",
+        "46",
+        "29",
+        "110",
+        "22",
+        "33",
+        "38",
+        "101",
+        "81",
+        "132",
+        "49",
+        "44",
+        "55",
+        "54",
+        "51",
+        "84",
+        "90",
+        "77",
+        "94",
+        "59",
+        "108",
+        "45",
+        "47",
+        "40",
+        "28",
+        "25",
+        "124",
+        "56",
+        "57",
+        "85",
+        "18",
+        "102",
+        "35",
+        "39",
+        "24",
+        "96",
+        "73",
+        "15",
+        "30",
+        "66",
+        "53",
+        "17",
+        "67",
+        "61"
+      ]
+    },
+    "Gender": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "SES Kuppuswamy": {
+      "dtype": "float64",
+      "missing": 73,
+      "unique_count": 5,
+      "values": [
+        "3.0",
+        "4.0",
+        "2.0",
+        "5.0",
+        "1.0"
+      ]
+    },
+    "Residence": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "3",
+        "2",
+        "1",
+        "4"
+      ]
+    },
+    "CARS Raw": {
+      "dtype": "float64",
+      "missing": 1,
+      "unique_count": 64,
+      "values": [
+        "40.0",
+        "36.0",
+        "38.0",
+        "37.0",
+        "19.0",
+        "35.0",
+        "40.5",
+        "20.5",
+        "45.0",
+        "44.5",
+        "32.5",
+        "38.5",
+        "31.0",
+        "27.0",
+        "41.0",
+        "28.0",
+        "37.5",
+        "43.0",
+        "28.5",
+        "33.5",
+        "45.5",
+        "36.5",
+        "39.5",
+        "27.5",
+        "42.5",
+        "34.5",
+        "30.0",
+        "35.5",
+        "42.0",
+        "44.0",
+        "30.5",
+        "21.5",
+        "18.0",
+        "23.0",
+        "22.0",
+        "20.0",
+        "23.5",
+        "19.5",
+        "17.0",
+        "25.0",
+        "16.0",
+        "22.5",
+        "18.5",
+        "15.0",
+        "26.0",
+        "21.0",
+        "17.5",
+        "24.0",
+        "34.0",
+        "47.0",
+        "49.0",
+        "47.5",
+        "50.0",
+        "48.0",
+        "39.0",
+        "46.0",
+        "33.0",
+        "42.6",
+        "32.0",
+        "51.0"
+      ]
+    },
+    "CARS Severity": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "3",
+        "2",
+        "1"
+      ]
+    },
+    "DP3 Physical": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 3,
+      "values": [
+        "4.0",
+        "5.0",
+        "3.0"
+      ]
+    },
+    "DP3 Adaptive": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 3,
+      "values": [
+        "5.0",
+        "4.0",
+        "3.0"
+      ]
+    },
+    "DP3 Social": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 3,
+      "values": [
+        "5.0",
+        "4.0",
+        "3.0"
+      ]
+    },
+    "DP3 Cognitive": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 4,
+      "values": [
+        "5.0",
+        "4.0",
+        "3.0",
+        "2.0"
+      ]
+    },
+    "DP3 Communication": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 3,
+      "values": [
+        "5.0",
+        "4.0",
+        "3.0"
+      ]
+    },
+    "DP3 DQ": {
+      "dtype": "object",
+      "missing": 17,
+      "unique_count": 83,
+      "values": [
+        "57.5",
+        "50",
+        "62.8",
+        "61.4",
+        "60",
+        "56",
+        "62",
+        "64.6",
+        "74.4",
+        "51",
+        "64",
+        "54",
+        "56.2",
+        "55.2",
+        "54.4",
+        "56.8",
+        "55.8",
+        "64.8",
+        "63.2",
+        "58",
+        "75.4",
+        "61",
+        "50.4",
+        "77.6",
+        "50.6",
+        "57",
+        "64.2",
+        "63.4",
+        "53.8",
+        "65.4",
+        "69.6",
+        "50.8",
+        "59",
+        "52.4",
+        "53.2",
+        "57.4",
+        "55",
+        "62.2",
+        "51.8",
+        "67.2",
+        "69",
+        "72.6",
+        "75.2",
+        "83",
+        "84",
+        "55.4",
+        "75",
+        "63.5",
+        "54.8",
+        "65.8",
+        "89.6",
+        "91.8",
+        "68.6",
+        "78.2",
+        "73.8",
+        "61.6",
+        "71",
+        "70.8",
+        "66",
+        "53"
+      ]
+    },
+    "DP3 interpretation": {
+      "dtype": "float64",
+      "missing": 17,
+      "unique_count": 3,
+      "values": [
+        "5.0",
+        "4.0",
+        "3.0"
+      ]
+    },
+    "Old tool ASD": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "Old tool number of criteria": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "Old tool final": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "2",
+        "1",
+        "4"
+      ]
+    },
+    "New 1a1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New 1a2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "New 1a3": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New 1a4": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New 1a5": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New 1a6": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    "New1a7": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New1a8": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "New1b1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New1b2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New1b3": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New1b4": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "New1c1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New1c2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    "New1c3": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "4",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    "New2a1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New2a2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New2a3": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    "New2a4": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    "New2a5": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "4",
+        "2",
+        "1"
+      ]
+    },
+    "New2a6": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New2a7": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New2b": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New2c": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "New2d1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    },
+    "New2d2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New2d3": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 3,
+      "values": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    "New2d4": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 4,
+      "values": [
+        "1",
+        "2",
+        "4",
+        "3"
+      ]
+    },
+    "newtoolseverity": {
+      "dtype": "float64",
+      "missing": 115,
+      "unique_count": 26,
+      "values": [
+        "10.0",
+        "3.0",
+        "19.0",
+        "11.0",
+        "8.0",
+        "16.0",
+        "18.0",
+        "12.0",
+        "13.0",
+        "14.0",
+        "7.0",
+        "15.0",
+        "9.0",
+        "5.0",
+        "26.0",
+        "21.0",
+        "17.0",
+        "22.0",
+        "20.0",
+        "24.0",
+        "23.0",
+        "27.0",
+        "0.0",
+        "1.0",
+        "2.0",
+        "6.0"
+      ]
+    },
+    "Section A1": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "Section A2": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "New onset early development": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "New impaired functioning": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "New final tool ASD": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "New final summary ASD": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "2",
+        "1"
+      ]
+    },
+    "DSM 5 gold standard diagnosis": {
+      "dtype": "int64",
+      "missing": 0,
+      "unique_count": 2,
+      "values": [
+        "1",
+        "2"
+      ]
+    }
+  },
+  "label_definition": "DSM-5 gold-standard diagnosis; paper reports 128 ASD and 97 non-ASD among 225, matching encoded 1 and 2 counts respectively.",
+  "provenance": "PLOS ONE 2019 S2 deidentified dataset; Figshare article 7840055; CC BY 4.0.",
+  "leakage_exclusions": [
+    "Patient ID",
+    "Old tool ASD",
+    "Old tool number of criteria",
+    "Old tool final",
+    "newtoolseverity",
+    "Section A1",
+    "Section A2",
+    "New onset early development",
+    "New impaired functioning",
+    "New final tool ASD",
+    "New final summary ASD",
+    "CARS Raw",
+    "CARS Severity",
+    "DP3 fields"
+  ],
+  "compatibility": "The 28 AIIMS Modified INDT-ASD items and DSM-5 expert target differ from UCI A1-A10/threshold-derived Class. Analyze separately; do not pool or directly compare metrics."
+}
